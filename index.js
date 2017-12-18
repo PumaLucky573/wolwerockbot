@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Bot = new Discord.Client();
 
-Bot.login(procces.env.BOT_TOKEN);
+Bot.login(process.env.BOT_TOKEN);
 
 //Listener Event: Bot Gestartet
 Bot.on('ready', () => {
