@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const Bot = new Discord.Client();
 
-Bot.login('MzkyMDMxNTQwNTcxNTM3NDA4.DRhTVw.5fr1Q-CmpjXGToY_Ki_VkR60jQU');
+Bot.login(procces.env.BOT_TOKEN);
 
 //Listener Event: Bot Gestartet
 Bot.on('ready', () => {
