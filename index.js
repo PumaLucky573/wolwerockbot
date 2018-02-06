@@ -1,4 +1,6 @@
 const Discord = require('discord.js');
+const botSettings = require("./botsettings.json");
+const prefix = botSettings.prefix;
 const Bot = new Discord.Client();
 
 Bot.login(process.env.BOT_TOKEN);
@@ -26,4 +28,20 @@ Bot.on('guildMemberAdd', member => {
     //Secondly, we will add the role
     member.addRole(role)
 
+});
+
+Bot.on("message", function(message) {
+    if (message.author.equals(Bot.user)) return;
+    
+    if (!message.content.startsWith(prefix)) return;
+
+    var args = message.content.substring(prefix.length).split(" ");
+
+    switch (args[0].toLowerCase()) {
+case "switch": 
+const member = message.author;
+message.member.sendMessage("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :smiley: SW-1625-5239-9402");
+message.delete();
+break;
+    }
 });
