@@ -40,7 +40,7 @@ Bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {
 case "switch": 
 const member = message.author;
-message.member.sendMessage("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :smiley: SW-1625-5239-9402");
+message.member.sendMessage("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :eyes: SW-1625-5239-9402");
 message.delete();
 break;
     }
