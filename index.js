@@ -13,7 +13,7 @@ Bot.on('ready', () => {
     //Bot.user.setStatus('Online')
 
     //Spiel & Stream
-    //Bot.user.setGame('Hallo')
+    Bot.user.setGame('Kekse klauen')
 
 });
 
