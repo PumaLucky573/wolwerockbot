@@ -4,6 +4,8 @@ const prefix = botSettings.prefix;
 const Bot = new Discord.Client();
 
 Bot.login(process.env.BOT_TOKEN);
+//Bot.login("NTQxMjUyNTIwNjY0NzYwMzIw.Dzc07A.DGKDae-ly0ZvjH5Bq0mk9rSvXic");
+
 
 //Listener Event: Bot Gestartet
 Bot.on('ready', () => {
@@ -20,7 +22,7 @@ Bot.on('ready', () => {
 //Listener Event: User Joining The Discord Server.
 Bot.on('guildMemberAdd', member => {
     
-    console.log('User ' + member.user.username + ' has joined the server!') //Send a message to the console that someone joined the discord server.
+    console.log('User ' + member.user.username + 'has joined the server!') //Send a message to the console that someone joined the discord server.
 
     //Now lets add role when they join. First, we need to get the role we want.
     var role = member.guild.roles.find('name', 'Raccrew'); // This looks for the role in the server(guild), it searches by name, meaning you can change 'user' to the role you want!
@@ -38,10 +40,14 @@ Bot.on("message", function(message) {
     var args = message.content.substring(prefix.length).split(" ");
 
     switch (args[0].toLowerCase()) {
-case "switch": 
-const member = message.author;
-message.member.sendMessage("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :eyes: SW-1625-5239-9402");
-message.delete();
-break;
+        case "switch": 
+            const member = message.author;
+            message.member.sendMessage("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :eyes: SW-1625-5239-9402");
+            message.delete();
+        break;
+        case "say":
+            message.channel.send(args.slice(1).join(' '));
+            message.delete();                        
+        break;
     }
 });
