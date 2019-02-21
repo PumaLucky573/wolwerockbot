@@ -16,6 +16,8 @@ Bot.on('ready', () => {
 
     //Spiel & Stream
     Bot.user.setGame('Kekse klauen')
+    
+    Bot.user.setGame('Procyos Stream schauen', 'https://www.twitch.tv/procyos')
 
 });
 
