@@ -4,7 +4,7 @@ const prefix = botSettings.prefix;
 const Bot = new Discord.Client();
 
 Bot.login(process.env.BOT_TOKEN);
-//Bot.login("NTQxMjUyNTIwNjY0NzYwMzIw.Dzc07A.DGKDae-ly0ZvjH5Bq0mk9rSvXic");
+//Bot.login("");
 
 
 //Listener Event: Bot Gestartet
@@ -40,14 +40,31 @@ Bot.on("message", function(message) {
     var args = message.content.substring(prefix.length).split(" ");
 
     switch (args[0].toLowerCase()) {
-        case "switch": 
-            const member = message.author;
-            message.member.sendMessage("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :eyes: SW-1625-5239-9402");
-            message.delete();
-        break;
-        case "say":
-            message.channel.send(args.slice(1).join(' '));
-            message.delete();                        
-        break;
+
+case "switch":
+
+const member = message.author;
+    message.member.send("Du möchtest online auf der Switch mit Sirion spielen? Dann füge sie deiner Freundesliste hinzu! :eyes: SW-1625-5239-9402");
+    message.delete();
+break;
+
+case "say":
+
+let sayRole1 = message.guild.roles.find("name", "Admin")
+let sayRole2 = message.guild.roles.find("name", "Entwickler")
+
+    if(message.member.roles.has(sayRole1.id)) {
+        message.channel.send(args.slice(1).join(' '));
+        message.delete();   
+    } else {
+    if(message.member.roles.has(sayRole2.id)) {
+        message.channel.send(args.slice(1).join(' '));
+        message.delete();   
+    } else {
+        message.reply("Du hast nicht die nötigen Permissions")
+           }
+    }                   
+break;
+
     }
 });
