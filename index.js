@@ -17,7 +17,7 @@ Bot.on('ready', () => {
     //Spiel & Stream
     Bot.user.setGame('Kekse klauen')
     
-    Bot.user.setGame('Procyos', 'https://www.twitch.tv/procyos')
+    Bot.user.setGame('Procyos schauen auch wenn sie nicht streamt', 'https://www.twitch.tv/procyos')
 
 });
 
