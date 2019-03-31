@@ -47,17 +47,17 @@ bot.on("message", async message => {
 if(cmd === `${prefix}botinfo`){
   const embed = new Discord.RichEmbed()
   .setAuthor(`Toni Racoon`, bot.user.avatarURL)
-  .setThumbnail(message.guild.iconURL)
+  .setThumbnail(bot.user.avatarURL)
   .addField(`Version`, `3.2.0`, true)
   .addField(`Node JS`, `v10.5.0`, true)
   .addField(`Library`, `[discord.js](https://discord.js.org/#/)`, true)
   .addField(`Server`, `${bot.guilds.size}`, true)
   .addField(`Benutzer`, `${bot.users.size}`, true)
-  .addField(`Website`, `Momentan nicht verfügbar`, true)
+  .addField(`Website`, `Momentan nicht verfügbar.`, true)
   .addField(`Discord`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy)`, true)
-  .addField(`Invite`, `In Entwicklung`, true)
+  .addField(`Invite`, `Momentan nicht verfügbar.`, true)
   .addField(`Developer`, `Leon|ShrederPlays#2076`, true)
-  .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung")
+  .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung.", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0xFF0092);
 message.delete();
@@ -72,9 +72,9 @@ if(cmd === `${prefix}serverinfo`){
   .addField(`**Server Besitzer:** `, `${message.guild.owner}`, true)
   .addField(`**Benutzer:** `, `${message.guild.memberCount}`, true)
   .addField(`**Rollen:** `, `${message.guild.roles.size}`, true)
-  .addField(`**Website:** `, `Momentan nicht verfügbar`, true)
+  .addField(`**Website:** `, `Momentan nicht verfügbar.`, true)
   .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy)`, true)
-  .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", message.guild.iconURL)
+  .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0x002AFF);
 message.delete();
