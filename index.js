@@ -84,7 +84,7 @@ message.channel.send(embed);
 if(cmd === `${prefix}userinfo`){
   const embed = new Discord.RichEmbed()
   .setAuthor(`${message.author.username}`, message.author.avatarURL)
-  .setThumbnail(message.guild.iconURL)
+  .setThumbnail(message.author.avatarURL)
   .addField(`**Benutzername:** `, `${message.author.username}`, true)
   .addField(`**Hashtag:** `, `${message.author.discriminator}`, true)
   .addField(`**Benutzer-ID:** `, `${message.author.id}`, true)
