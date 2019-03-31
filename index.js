@@ -66,7 +66,7 @@ message.channel.send(embed);
 //SERVER-INFORMATIONEN.
 if(cmd === `${prefix}serverinfo`){
   const embed = new Discord.RichEmbed()
-  .setAuthor(`${message.guild.name}`, message.guild.iconURL)
+  .setAuthor(`${message.guild.name}`, "https://cdn.discordapp.com/attachments/561872470508830730/562010252871204894/waschbar2.png")
   .setThumbnail("https://cdn.discordapp.com/attachments/561872470508830730/562010252871204894/waschbar2.png")
   .addField(`**Server Name:** `, `${message.guild.name}`, true)
   .addField(`**Server Besitzer:** `, `${message.guild.owner}`, true)
