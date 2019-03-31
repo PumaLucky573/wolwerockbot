@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const botconfig = require("./botconfig.json");
 const bot     = new Discord.Client({disableEveryone: true});
-const colors = require("./colors.json");
 const ytdl = require("ytdl-core");
 
 Bot.login(process.env.BOT_TOKEN);
