@@ -54,7 +54,7 @@ if(cmd === `${prefix}botinfo`){
   .addField(`Server`, `${bot.guilds.size}`, true)
   .addField(`Benutzer`, `${bot.users.size}`, true)
   .addField(`Website`, `Momentan nicht verfügbar.`, true)
-  .addField(`Discord`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy)`, true)
+  .addField(`Discord`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .addField(`Invite`, `Momentan nicht verfügbar.`, true)
   .addField(`Developer`, `Leon|ShrederPlays#2076`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung.", bot.user.avatarURL)
@@ -73,7 +73,7 @@ if(cmd === `${prefix}serverinfo`){
   .addField(`**Benutzer:** `, `${message.guild.memberCount}`, true)
   .addField(`**Rollen:** `, `${message.guild.roles.size}`, true)
   .addField(`**Website:** `, `Momentan nicht verfügbar.`, true)
-  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy)`, true)
+  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0x002AFF);
@@ -92,7 +92,7 @@ if(cmd === `${prefix}userinfo`){
   .addField(`**Spiel:** `, `${message.author.presence.game}`, true)
   .addField(`**Rolle:**`, `${message.member.highestRole}`, true)
   .addField(`**Erstellt am:** `, `${message.author.createdAt}`, true)
-  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy)`, true)
+  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0x00FF00);
