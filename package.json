@@ -1,14 +1,16 @@
 {
-  "name": "wolwerockbot",
-  "version": "1.0.0",
-  "description": "Wolwerock Bot For Team Sirion",
-  "main": "index.js",
+  "name": "toniracoon",
+  "version": "3-2.0",
+  "description": "JustTestingStuff",
+  "main": "bot.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node bot.js",
+    "test": "node bot.js debug"
   },
-  "author": "",
+  "author": "Leon|ShrederPlays",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "discord.js": "^11.4.2",
+    "ytdl-core": "^0.29.1"
   }
 }
