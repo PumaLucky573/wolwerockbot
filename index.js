@@ -270,7 +270,7 @@ if(cmd === `${prefix}8ball`) {
 
  let ballembed = new Discord.RichEmbed()
   .setAuthor(`${message.guild.name}`, message.author.avatarURL)
-  .setThumbnail("")
+  .setThumbnail("https://lh3.googleusercontent.com/ZJ40v2DOxvQLXVts-Z1BqABhao_ozBF2gSzXl91mmFCAW5iJyT_a8aV6cpoi9so2oA=s180")
   .addField("Frage:", question, true)
   .addField("Antwort:", replies[result], true)
   .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
