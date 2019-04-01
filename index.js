@@ -305,7 +305,7 @@ if(cmd === `${prefix}help`) {
 
   const hembed = new Discord.RichEmbed()
     .setColor(0x00AC00)
-    .setThumbnail(message.guild.iconURL)
+    .setThumbnail(bot.user.avatarURL)
     .setAuthor(`Toni Raccoon`, bot.user.avatarURL)
     .addField(`**Info-Befehle:**`, `${prefix}serverinfo |Zeigt dir die Serverinformationen an.| ` + `\n${prefix}userinfo |Zeigt dir die Benutzerinfos an.| ` + `\n${prefix}botinfo |Zeigt dir die Botinfos an.|`, true)
     .addField(`**Admin/Mod-Befehle:**`, `${prefix}listening |Stellt seinen Status auf DnD\nUnd sein Spiel auf "Hört auf Spotify Musik."|\n ` + `\n${prefix}playing |Stellt seinen Status auf Online.\nUnd sein Spiel auf "Kekse klauen."|\n ` + `\n${prefix}streaming |Stellt seinen Status auf DnD.\nUnd sein Spiel auf "Life auf Twitch: Auf einem Keks Raubzug sein."|\n ` + `\n${prefix}watching |Stellt seinen Status auf DnD.\nUnd Schaut Pr0cy0z beim Streamen zu.|\n ` + `\n${prefix}statushelp |Stellt seinen Status auf Online\nUnd was er Spielt auf "!help für die Befehlsliste."|\n` + `\n${prefix}clear |${prefix}clear 10 als beispiel: Löscht 10 Nachrichten.|\n ` + `\n${prefix}say |${prefix}say Hallo ich bin ein Bot. als beispiel: Lässt den Bot schreiben "Hallo ich bin ein Bot."|`, true)
