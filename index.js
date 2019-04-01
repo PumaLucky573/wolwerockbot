@@ -269,7 +269,7 @@ if(cmd === `${prefix}8ball`) {
   let question = args.slice().join(" ");
 
  let ballembed = new Discord.RichEmbed()
-  .setAuthor(`${message.guild.name}`, message.author.avatarURL)
+  .setAuthor(`Toni Racoons 8Ball`, bot.user.avatarURL)
   .setThumbnail("https://lh3.googleusercontent.com/ZJ40v2DOxvQLXVts-Z1BqABhao_ozBF2gSzXl91mmFCAW5iJyT_a8aV6cpoi9so2oA=s180")
   .addField("Frage:", question, true)
   .addField("Antwort:", replies[result], true)
