@@ -263,7 +263,7 @@ if(message.member.roles.has(botRole1.id)) {
 //8BALL-COMMAND
 if(cmd === `${prefix}8ball`) {
   if(!args[2]) return message.reply("Bitte stelle eine ganze Frage!");
-  let replies = ["Ja.", "Nein.", "Das weiß ich nicht.", "Frag mich später nochmal.", "Vielleicht.", "Ja.", "Nein.", "Das weiß ich nicht.", "Frag mich später nochmal.", "Vielleicht.", "Wenn du diese Antwort bekommen hast darfst du dich glücklich schätzen es passiert nicht so oft ^^"];
+  let replies = ["Ja.", "Nein.", "Das weiß ich nicht.", "Frag mich später nochmal."];
 
   let result = Math.floor((Math.random()  * replies.length));
   let question = args.slice().join(" ");
