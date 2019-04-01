@@ -277,6 +277,7 @@ if(cmd === `${prefix}8ball`) {
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor("#FF9900");
+    message.delete();
 message.channel.send(ballembed);
 }
 //CLEAR-COMMAND
