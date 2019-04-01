@@ -26,7 +26,7 @@ bot.on('ready', () => {
     console.log(`${bot.user.username} is online`);
 
     bot.user.setStatus("online");
-    bot.user.setActivity("Kekse klauen.", {type: "PLAYING"} );
+    bot.user.setActivity("!help für Befehlsliste.", {type: "PLAYING"} );
 });
 
 //--------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ bot.on("message", async message => {
 //BOT-INFORMATIONEN.
 if(cmd === `${prefix}botinfo`){
   const embed = new Discord.RichEmbed()
-  .setAuthor(`Toni Racoon`, bot.user.avatarURL)
+  .setAuthor(`Toni Raccoon`, bot.user.avatarURL)
   .setThumbnail(bot.user.avatarURL)
   .addField(`Version:`, `3.2.4`, true)
   .addField(`Node JS:`, `v10.5.0`, true)
@@ -56,7 +56,7 @@ if(cmd === `${prefix}botinfo`){
   .addField(`Website:`, `In Entwicklung... 0% Abgeschlossen.`, true)
   .addField(`Erstellt am:`, bot.user.createdAt, true)
   .addField(`Developer:`, `@Leon|ShrederPlays#2076`, true)
-  .addField(`Discord:`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
+  .addField(`Discord:`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Raccoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0xFF0092);
@@ -75,7 +75,7 @@ if(cmd === `${prefix}serverinfo`){
   .addField(`**Website:**`, `Momentan nicht verfügbar`, true)
   .addField(`**Erstellt am:**`, message.guild.createdAt, true)
   .addField(`**You joined at:**`, message.member.joinedAt, true)
-  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
+  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Raccoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0x002AFF);
@@ -94,7 +94,7 @@ if(cmd === `${prefix}userinfo`){
   .addField(`**Spiel:** `, `${message.author.presence.game}`, true)
   .addField(`**Rolle:**`, `${message.member.highestRole}`, true)
   .addField(`**Erstellt am:** `, `${message.author.createdAt}`, true)
-  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
+  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Raccoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor(0x00FF00);
@@ -269,11 +269,11 @@ if(cmd === `${prefix}8ball`) {
   let question = args.slice().join(" ");
 
  let ballembed = new Discord.RichEmbed()
-  .setAuthor(`Toni Racoons 8Ball`, bot.user.avatarURL)
+  .setAuthor(`Toni Raccoons 8Ball`, bot.user.avatarURL)
   .setThumbnail("https://lh3.googleusercontent.com/ZJ40v2DOxvQLXVts-Z1BqABhao_ozBF2gSzXl91mmFCAW5iJyT_a8aV6cpoi9so2oA=s180")
   .addField("Frage:", question, true)
   .addField("Antwort:", replies[result], true)
-  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
+  .addField(`**Discord:** `, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Raccoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   .setColor("#FF9900");
@@ -294,10 +294,10 @@ if(cmd === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
   .setColor(0x00AC00)
   .setThumbnail(bot.user.avatarURL)
-  .setAuthor(`Toni Racoon`, bot.user.avatarURL)
+  .setAuthor(`Toni Raccoon`, bot.user.avatarURL)
   .setDescription(`**Der Bot reagiert auf den Prefix: ${prefix}**`)
   .addField(`**Benutzer:**`, `${message.member.user.tag} schaue in deine DMs!`, true)
-  .addField(`**Discord:**`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
+  .addField(`**Discord:**`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Raccoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
   .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
   .setTimestamp()
   message.delete();
@@ -306,11 +306,11 @@ if(cmd === `${prefix}help`) {
   const hembed = new Discord.RichEmbed()
     .setColor(0x00AC00)
     .setThumbnail(message.guild.iconURL)
-    .setAuthor(`Toni Racoon`, bot.user.avatarURL)
+    .setAuthor(`Toni Raccoon`, bot.user.avatarURL)
     .addField(`**Info-Befehle:**`, `${prefix}serverinfo |Zeigt dir die Serverinformationen an.| ` + `\n${prefix}userinfo |Zeigt dir die Benutzerinfos an.| ` + `\n${prefix}botinfo |Zeigt dir die Botinfos an.|`, true)
     .addField(`**Admin/Mod-Befehle:**`, `${prefix}listening |Stellt seinen Status auf DnD\nUnd sein Spiel auf "Hört auf Spotify Musik."|\n ` + `\n${prefix}playing |Stellt seinen Status auf Online.\nUnd sein Spiel auf "Kekse klauen."|\n ` + `\n${prefix}streaming |Stellt seinen Status auf DnD.\nUnd sein Spiel auf "Life auf Twitch: Auf einem Keks Raubzug sein."|\n ` + `\n${prefix}watching |Stellt seinen Status auf DnD.\nUnd Schaut Pr0cy0z beim Streamen zu.|\n ` + `\n${prefix}statushelp |Stellt seinen Status auf Online\nUnd was er Spielt auf "!help für die Befehlsliste."|\n` + `\n${prefix}clear |${prefix}clear 10 als beispiel: Löscht 10 Nachrichten.|\n ` + `\n${prefix}say |${prefix}say Hallo ich bin ein Bot. als beispiel: Lässt den Bot schreiben "Hallo ich bin ein Bot."|`, true)
     .addField(`**User-Befehle:**`, `${prefix}switch |Schickt dir per DM den Switch-Freundescode von Pr0cy0z.|\n ` + `\n${prefix}8ball |${prefix}8ball Bin ich dumm? als beispiel:\nFragt den Bot ob du Dumm bist. (Antworten sind zufällig...)|`, true)
-    .addField(`**Discord:**`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Racoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
+    .addField(`**Discord:**`, `[Raccrew](https://discord.gg/aRE4Jae) |` + ` [Raccoon Aiming](https://discord.gg/f7CT8yy) |` + ` [Tonis Labor](https://discord.gg/9Ym8zdr)`, true)
     .setDescription(`**Der Bot reagiert auf den Prefix: ${prefix}**`)
     .setFooter("Prefix: ! | Der Bot ist immernoch in Entwicklung", bot.user.avatarURL)
     .setTimestamp()
