@@ -7,7 +7,7 @@ const YouTube         = require('simple-youtube-api');
 const ready           = require('./handlers/ready');
 const message         = require('./handlers/message');
 const config          = require('./settiings/config.json');
-let {YouTubeAPIKey}   = (process.env.YOUTUBE_API_KEY);//require('./settiings/credentials.json');
+//let {YouTubeAPIKey}   = (process.env.YOUTUBE_API_KEY);//require('./settiings/credentials.json');
 const utils           = require('./global/utils');
 const bot             = new discord.Client();
 
